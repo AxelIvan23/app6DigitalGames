@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../../services/data/data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-reactive',
@@ -12,4 +14,7 @@ export class ReactiveComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  registrarse() { 
+
+  }
 }

@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+.Fondo {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	z-index: -2;
+}
+
+.snow {
+	text-align: center;
+	color: #ebfffb;
+}
+
+.Fondo img, .Fondo-container {
+	position: absolute;
+	height: inherit;
+	width: inherit;
+}
+
+.Fondo-container {
+	width: 100%;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.card-img-top {
+	height: 56%;
+}
+
+.bg-custom {
+	background: linear-gradient(90deg, #472b62, #bc4873, #fb5b5a);
+}
+
+.card-body {
+	background-color: #dbf6e9;
+	height: 17vh;
+}
+
+.img-icon {
+	border-radius: 50%; 
+}
+
+.footer {
+	background-color: #003f5c;
+	color: white;
+}
+
+.view {
+	height: 100vh;
+}

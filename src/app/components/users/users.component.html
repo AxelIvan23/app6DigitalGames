@@ -1,0 +1,16 @@
+
+<div class="Fondo">
+	<img src="../../../../assets/img/fondo2.jpg">
+</div>
+<div class="view-main">
+	<div class="d-flex flex-wrap justify-content-center mt-3">
+		<div class="card mx-3 my-4" style="width: 18vw; height: 52vh" *ngFor="let usuario of resultados">
+		  <img class="card-img-top" [src]="usuario.avatar" alt="Card image cap">
+		  <div class="card-body pb-1">
+		    <h5 class="card-title">{{usuario.first_name}} {{usuario.last_name}}</h5>
+		    <p class="card-text">{{usuario.email}}</p>
+		    <a class="btn btn-primary bg-custom" (click)="enviar(usuario.id)">Ver info</a> 
+		  </div>
+		</div>
+	</div>
+</div>
