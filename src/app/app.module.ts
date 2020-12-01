@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UsersComponent } from './components/users/users.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { UserComponent } from './components/user/user.component';
+import { ShaderComponent } from './components/shader/shader.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UserComponent } from './components/user/user.component';
     FooterComponent,
     UsersComponent,
     AdminComponent,
-    UserComponent
+    UserComponent,
+    ShaderComponent
   ],
   imports: [
     BrowserModule,

@@ -33,6 +33,9 @@
 .bg-custom {
 	background: linear-gradient(90deg, #472b62, #bc4873, #fb5b5a);
 }
+.color-custom {
+	color: linear-gradient(90deg, #472b62, #bc4873, #fb5b5a);
+}
 
 .card-body {
 	background-color: #dbf6e9;

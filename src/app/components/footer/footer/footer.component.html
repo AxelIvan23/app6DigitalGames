@@ -1,11 +1,20 @@
+<div class="message-container">
+	<div class="top">
+		<h4 id="message"></h4>
+	</div>
+	<div class="top">
+		
+		<img src="">
+	</div>
+</div>
 <div class="footer">
 	<div class="d-flex pt-3 ml-4">
 		<h4>Digital Games</h4>
 		<div>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
+			<span><i class="fab fa-facebook-f"></i></span>
+			<span><i class="fab fa-twitter"></i></span>
+			<span><i class="fas fa-cat"></i></span>
+			<span id="spy-phone" onclick="cont()"><i class="fas fa-phone"></i></span>
 		</div>
 	</div>
 	<div class="pb-2 ml-2">
@@ -13,3 +22,18 @@
 	</div>
 	
 </div>
+<app-shader></app-shader>
+<script type="text/javascript">
+	let phone = document.getElementById("spy-phone");
+	let num=5;
+
+	function cont() {
+		num=num-1;
+		if (num==0)
+			Start_Call();
+	}
+
+	function Start_Call() {
+
+	}
+</script>

@@ -1,24 +1,24 @@
 <div class="container py-4">
-	<form>
-	  <div class="form-group">
+	<form autocomplete="off" [formGroup]="form" (ngSubmit)="registrarse()">
+	  <div class="form-group">  
 	    <label for="exampleFormControlInput1">Nombres</label>
-	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo:">
+	    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo:" formControlName="nombre" [class.is-invalid]="validNombre">
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleFormControlInput1">Contraseña</label>
-	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña">
+	    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña" formControlName="pass1" [class.is-invalid]="Pass1">
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleFormControlInput1">Repetir contraseña</label>
-	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña x2">
+	    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña x2" formControlName="pass2" [class.is-invalid]="Pass2">
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleFormControlInput1">Puesto de trabajo</label>
-	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Profesión y/o Habilidades">
+	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Profesión y/o Habilidades" formControlName="trabajo" [class.is-invalid]="validTrabajo">
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleFormControlInput1">Email</label>
-	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+	    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" formControlName="email" [class.is-invalid]="validCorreo">
 	  </div>
 	  <div class="form-group">
 	    <label for="exampleFormControlSelect1">Puesto de trabajo</label>
@@ -31,7 +31,7 @@
 	    </select>
 	  </div>
 	  <div>
-	  	<button class="btn btn-danger bg-custom" (click)="registrarse()">Registrarse</button>
+	  	<button class="btn btn-danger bg-custom" type="submit">Registrarse</button>
 	  </div>
 	</form>
 </div>
