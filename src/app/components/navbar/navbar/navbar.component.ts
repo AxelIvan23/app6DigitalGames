@@ -17,4 +17,8 @@ export class NavbarComponent implements OnInit {
   	this.route.navigate(['user/',id]);
   }
 
+  borrar() {
+  	
+  }
+
 }

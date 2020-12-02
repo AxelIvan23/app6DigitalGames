@@ -33,6 +33,23 @@
 .bg-custom {
 	background: linear-gradient(90deg, #472b62, #bc4873, #fb5b5a);
 }
+
+.bg-custom:hover {
+	animation: animate 0.5s infinite;
+}
+
+@keyframes animate {
+	 0% {background: linear-gradient(90deg, #472b62, #bc4873, #fb5b5a);}
+  12.5% {background: linear-gradient(90deg, #fb5b5a 0%,#472b62 25%, #bc4873 75%, #fb5b5a 100%);}
+  25% {background: linear-gradient(90deg, #fb5b5a, #472b62, #bc4873);}
+	37.5% {background: linear-gradient(90deg, #fb5b5a, #472b62 75%, #bc4873 100%);}
+  50% {background: linear-gradient(-90deg, #472b62, #bc4873, #fb5b5a);}
+  62.5% {background: linear-gradient(90deg, #472b62 0%, #fb5b5a 20%, #bc4873 65%, #472b62 110%);}
+  75% {background: linear-gradient(90deg, #bc4873 0%,#472b62 35%, #fb5b5a 95%, #bc4873 100%);}
+  87.5% {background: linear-gradient(-90deg, #fb5b5a 0%,#472b62 25%, #bc4873 75%, #fb5b5a 100%);}
+  100% {background: linear-gradient(-90deg, #472b62, #bc4873, #fb5b5a);}
+}
+
 .color-custom {
 	color: linear-gradient(90deg, #472b62, #bc4873, #fb5b5a);
 }
