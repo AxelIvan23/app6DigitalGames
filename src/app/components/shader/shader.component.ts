@@ -15,7 +15,7 @@ export class ShaderComponent implements OnInit {
 
 	var renderer = new THREE.WebGLRenderer();
 	renderer.setSize( window.innerWidth, window.innerHeight );
-	document.body.appendChild( renderer.domElement );
+	document.getElementById("fondo").appendChild( renderer.domElement );
 
 	const camera = new THREE.OrthographicCamera(
 	    -1, // left
@@ -134,9 +134,9 @@ export class ShaderComponent implements OnInit {
 
 	  function render(time) {
 	    time *= 0.001;  // convert to seconds
-
+	    
 	    resizeRendererToDisplaySize(renderer);
-
+	    renderer.setSize( window.innerWidth, window.innerHeight );
 	    const canvas = renderer.domElement;
 	    uniforms.iResolution.value.set(canvas.width, canvas.height, 1);
 	    uniforms.iTime.value = time;

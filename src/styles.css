@@ -11,7 +11,7 @@
 	color: #ebfffb;
 }
 
-.Fondo img, .Fondo-container {
+.Fondo *, .Fondo-container {
 	position: absolute;
 	height: inherit;
 	width: inherit;
